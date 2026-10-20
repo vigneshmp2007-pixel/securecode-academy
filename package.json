@@ -1,0 +1,14 @@
+{
+  "name": "securecode-academy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Interactive secure coding platform: learn OWASP flaws by exploiting and patching them.",
+  "scripts": {
+    "install:all": "npm install && npm --prefix server install && npm --prefix client install",
+    "dev": "concurrently -n api,web -c magenta,cyan \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "build": "npm --prefix client run build",
+    "start": "npm --prefix server start",
+    "sandbox:build": "docker build -t securecode-sandbox server/sandbox"
+  },
+  "devDependencies": { "concurrently": "^9.1.0" }
+}
