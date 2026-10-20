@@ -8,7 +8,7 @@
     "start": "node src/index.js",
     "test:harness": "node scripts/selftest.js"
   },
-  "engines": { "node": ">=18" },
+  "engines": { "node": ">=20.0.0 <22.0.0" },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "better-sqlite3": "^11.7.0",
